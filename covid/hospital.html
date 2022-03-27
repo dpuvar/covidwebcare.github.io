@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospitals</title>
+</head>
+<body bgcolor="lightblue">
+    <div class="hero">
+   <div class="tab">
+    <button id="tab1">Number of beds</button>
+    <button id="tab2">blood bank</button>
+    <button id="tab3">Oxygen cylinder</button>
+    <button id="tab4">CT Scan</button>
+    </div>
+   <div class="content"></div>
+   <div id="content1">
+       <div class="content-text">
+           <h2>Following data is available :</h2>
+           <p>Construction of the mausoleum was essentially completed in 1643, but work continued on other phases of the project for another 10 years. The Taj Mahal complex is believed to have been completed in its entirety in 1653 at a cost estimated at the time to be around 32 million rupees, which in 2020 would be approximately 70 billion rupees (about U.S. $956 million). The construction project employed some 20,000 artisans under the guidance of a board of architects led by the court architect to the emperor, Ustad Ahmad Lahauri.</p>
+       </div>
+   </div>
+   <div id="content2">
+    <div class="content-text">
+        <h2>Following data is available :</h2>
+        <p>Construction of the mausoleum was essentially completed in 1643, but work continued on other phases of the project for another 10 years. The Taj Mahal complex is believed to have been completed in its entirety in 1653 at a cost estimated at the time to be around 32 million rupees, which in 2020 would be approximately 70 billion rupees (about U.S. $956 million). The construction project employed some 20,000 artisans under the guidance of a board of architects led by the court architect to the emperor, Ustad Ahmad Lahauri.</p>
+    </div>
+</div>
+   </div>
+   <div id="content3"></div>
+   <div id="content4"></div>
+    </div>
+    
+</body>
+<style>
+    *{
+        padding: 0;
+        margin:0;
+        font-family: sans-serif;
+    }
+    .hero{
+        width:70%;
+        height: 70%;
+        display:flex;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        overflow: hidden;
+
+    }
+    .tab{
+        flex-basis: 25%;
+        background: #015247;
+  
+
+    }
+    .content{
+        flex-basis: 85%;
+        width: 90%;
+        background: #fffefe;
+    }
+    .tab button{
+        width: 100%;
+        background: transparent;
+        border:0;
+        outline:none;
+        padding:18px ,30px;
+        font-weight: bold;
+        color: #fff;
+        cursor: pointer;
+    }
+   #content1,
+   #content2,
+   #content3,
+   #content4{
+       height: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       position:absolute;
+       transform: translateY(100%);
+       transform: 0.7s;
+     
+   }
+     .content-text{
+           width: 80%;
+           
+     }
+     .content-text h2{
+         color: #9322d4;
+         margin-bottom: 30px;
+         margin-left: 200px;
+     }
+     .content-text p{
+         font-size: 13px;
+     }
+     #content1{
+         transform: translateY(0%);
+     } 
+    
+</style>
+<script>
+    var tab1 = document.getElementById("tab1");
+    var tab2 = document.getElementById("tab2");
+    var tab3 = document.getElementById("tab3");
+    var tab4 = document.getElementById("tab4");
+    var content1 = document.getElementById("content1");
+    var content2 = document.getElementById("content2");
+    var content3 = document.getElementById("content3");
+    var content4 = document.getElementById("content4");
+    tab1.onclick=function(){
+        content1.style.transform= "translateY(0)";
+        content1.style.transform= "translateY(100%)";
+        content1.style.transform= "translateY(100%)";
+        content1.style.transform= "translateY(100%)";
+        content1.style.transitionDelay="0.3s";
+        content2.style.transitionDelay="0";
+        content3.style.transitionDelay="0";
+        content4.style.transitionDelay="0";
+        tab1.style.background="#f1f1f1";
+        tab2.style.background="transparent";
+        tab3.style.background="transparent";
+        tab4.style.background="transparent";
+
+    }
+    tab2.onclick=function(){
+        content1.style.transform= "translateY(100%)";
+        content1.style.transform= "translateY(0)";
+        content1.style.transform= "translateY(100%)";
+        content1.style.transform= "translateY(100%)";
+        content1.style.transitionDelay="0";
+        content2.style.transitionDelay="0.3s";
+        content3.style.transitionDelay="0";
+        content4.style.transitionDelay="0";
+        tab1.style.background="#f1f1f1";
+        tab2.style.background="#f1f1f1";
+        tab3.style.background="transparent";
+        tab4.style.background="transparent";
+
+    }
+</script>
+</html>
