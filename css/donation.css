@@ -1,0 +1,327 @@
+* {
+	box-sizing: border-box;
+	margin: 0px 0px;
+	list-style-type: upper-roman;
+}
+
+header {
+	background-color: rgba(86, 10, 148, 0.89);
+}
+.banner {
+	background-attachment: fixed;
+	min-height: 100px;
+	height: 20vw;
+	background-image: url(../IMG/COVID.gif);
+	background-repeat: no-repeat;
+	background-size: 50%;
+	background-position: top center;
+}
+nav,
+footer {
+	display: flex;
+	background-color: rgb(247, 0, 0);
+}
+/* nav {
+		position: sticky;
+		top: 1px;
+	} */
+nav a,
+footer a {
+	color: goldenrod;
+	text-align: center;
+	display: block;
+	float: left;
+	font-size: 20px;
+	text-decoration: none;
+	padding: 5px 15px;
+}
+
+.menu:hover {
+	color: white;
+	background-color: rgb(43, 42, 42);
+}
+
+footer {
+	background-color: black;
+}
+
+footer a {
+	color: white;
+}
+section {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+section h2 {
+	padding-bottom: 60px;
+}
+section h2 span {
+	color: rgb(15, 15, 15);
+	background: linear-gradient(
+		to right,
+		rgb(81, 255, 0),
+		rgba(16, 226, 34, 0.747)
+	);
+	background-color: rgb(43, 255, 0);
+	padding: 15px 50px;
+	border-radius: 35px;
+}
+
+div p {
+	margin: 10px 10px;
+	padding: 10px 10px;
+	color: crimson;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+div p a {
+	font-weight: 100;
+	text-decoration: none;
+}
+.register {
+	color: rgb(4, 255, 234);
+	background: linear-gradient(
+		to right,
+		rgb(178, 21, 209),
+		rgba(109, 3, 82, 0.904)
+	);
+	background-color: rgba(255, 0, 242, 0.938);
+	padding: 5px 10px;
+	margin: 10px 10px;
+	border-radius: 35px;
+}
+
+.register:hover {
+	cursor: pointer;
+	background: linear-gradient(
+		to right,
+		rgba(0, 160, 223, 0.904),
+		rgb(16, 199, 206)
+	);
+	background-color: rgba(32, 202, 202, 0.938);
+	color: white;
+	background-color: blue;
+}
+.blood {
+	height: 250px;
+	background-color: aqua;
+	box-shadow: 5px 15px 16px 5px black;
+	padding: 40px 40px;
+	margin-bottom: 100px;
+}
+
+.b1 div img,
+.b3 div img {
+	float: right;
+	height: 350px;
+}
+
+.b2 div img,
+.b5 div img {
+	float: left;
+	height: 350px;
+}
+
+section:nth-child(odd) {
+	background-color: burlywood;
+}
+
+section:nth-child(even) {
+	background-color: lightgoldenrodyellow;
+}
+section {
+	min-height: 100vh;
+	text-align: center;
+	padding: 75px 0px;
+}
+.copy,
+.login {
+	margin-left: auto;
+}
+
+.carousel {
+	text-align: center;
+	background: rgba(10, 163, 86, 0.945);
+}
+ul {
+	color: rgb(162, 0, 255);
+	display: grid;
+}
+
+ul li {
+	margin: 5px 5px;
+	text-align: left;
+}
+.carousel-cell {
+	width: 60%;
+	margin-right: 10px;
+	border-radius: 5px;
+}
+.carousel-cell img {
+	height: 310px;
+}
+
+.carousel-cell:before {
+	display: block;
+	line-height: 200px;
+}
+
+.iframe-container {
+	width: 100%;
+	height: 530px;
+	text-align: center;
+}
+
+.iframe-container .carousel-cell {
+	overflow: hidden;
+	width: 100%;
+	height: 50%;
+	border-radius: 5px;
+	padding-top: 56.25%;
+}
+
+.iframe-container .carousel-cell iframe {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 15%;
+	border: 0;
+	width: 70%;
+	height: 70%;
+}
+
+.iframe-container {
+	margin-bottom: 80px;
+}
+.image {
+	background-color: darkorange;
+	margin-bottom: 80px;
+}
+
+.beds {
+	padding: 20px;
+	margin-top: 40px;
+}
+
+.beds h1 {
+	color: black;
+}
+
+.beds p {
+	text-align: center;
+	color: forestgreen;
+}
+.beds p ul li {
+	color: mediumslateblue;
+}
+.O1 {
+	color: black;
+}
+.O2 {
+	color: red;
+	font-weight: 200;
+	font-size: 70px;
+	font-style: bolder;
+}
+.wrap1 {
+	align-items: space-around;
+	display: flex;
+}
+
+.div1,
+.div3,
+.div2 {
+	background-color: bisque;
+	flex-wrap: wrap;
+	box-shadow: 0 4px 16px 0 black;
+	margin-top: 30px;
+	padding: 20px;
+	margin: 15px;
+	border: 2px medium black;
+}
+.div1,
+.div3 {
+	margin-top: 100px;
+}
+
+.div1 h2,
+.div2 h2,
+.div3 h2 {
+	float: bottom;
+	display: grid;
+	padding: 10px;
+	margin-top: 15px;
+	background-color: gray;
+	color: aliceblue;
+}
+.div2,
+.div1,
+.div3 {
+	height: 100%;
+}
+
+.div1 p,
+.div2 p,
+.div3 p {
+	float: bottom;
+	display: grid;
+}
+.div2:hover,
+.div1:hover,
+.div3:hover {
+	background-color: cornflowerblue;
+	padding: 40px 40px;
+	margin: 40px 40px;
+}
+
+.money,
+.cspit {
+	font-size: 20px;
+	color: crimson;
+}
+@media screen and (max-width: 756px) {
+	nav,
+	footer {
+		flex-direction: column;
+	}
+
+	.wrap1 {
+		overflow: scroll;
+	}
+	.b1 div img,
+	.b3 div img,
+	.b2 div img,
+	.b5 div img {
+		float: none;
+	}
+	section h2 span {
+		padding: 5px 10px;
+	}
+	.register {
+		padding: 1px 5px;
+	}
+
+	/* #handle {
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+	} */
+
+	.copy,
+	.login {
+		margin-left: 0;
+	}
+}
+@media (max-width: 1294px) {
+	.blood {
+		float: none;
+		overflow: scroll;
+	}
+}
+@media (max-width: 146px) {
+	section h2 span {
+		padding: 0px 0px;
+	}
+}
